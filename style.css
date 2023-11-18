@@ -3,6 +3,135 @@
     padding: 0;
 }
 
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(10, 10, 10), rgb(47, 46, 48)) ;
+
+}
+
+
 header {
-    color: blue;
+    color: white;
+    height: 60px;
+    margin-top: 10px;
+}
+
+img {
+    width: 40px;
+}
+
+.follow-button {
+    height: 20px;
+    width: 65px;
+    background-color: rgb(49, 149, 76);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 0.5px;
+}
+
+.follow-button:hover {
+    color: white;
+
+}
+
+hr {
+    border: none;
+    color: rgb(88, 87, 87);
+    height: 1px;
+    background-color: #333;
+}
+
+.section1-header {
+    display: flex;
+    gap: 5px;
+}
+
+.React-Daily {
+    position: absolute;
+    left: 45px;
+    top: 30px;
+}
+
+.header-p {
+    color: #989494;
+}
+
+.span1:hover {
+    color: white;
+}
+
+.Section2-header {
+    display: flex;
+    float: right;
+    /* gap: 10px; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #989494; */
+    /* margin: 10px; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.heart-button {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(94, 90, 111);
+    border: 1px solid rgb(94, 90, 111);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.source-code {
+    height: 45px;
+    padding: 10px;
+    background-color: rgb(94, 90, 111);
+    border: 1px solid rgb(94, 90, 111);
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+}
+
+.Pin-item {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(94, 90, 111);
+    border: 1px solid rgb(94, 90, 111);
+    border-radius: 5px;
+    color: white;
+    margin-left: 5px;
+}
+
+.drop-down {
+    width: 25px;
+    height: 45px;
+    background-color: rgb(94, 90, 111);
+    border: 1px solid rgb(94, 90, 111);
+    border-radius: 5px;
+    color: white;
+    margin-left: 1px;
+    margin-right: 10px;
+}
+
+.User-menue {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(10, 10, 10);
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    color: white;
+   
+}
+
+.netflix-user-icon {
+    width: 45px;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.fa-heart {
+    color: rgb(206, 96, 114);
+    font-size: 20px;
 }
