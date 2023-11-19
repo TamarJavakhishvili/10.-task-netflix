@@ -5,14 +5,16 @@
 
 
 body{
-    height: 100vh;
+    height: 200vh;
     background-image: linear-gradient(to bottom, rgb(10, 10, 10), rgb(47, 46, 48)) ;
-
+    font-family: Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 header {
-    color: white;
+    color: whitesmoke;
     height: 60px;
     margin-top: 10px;
 }
@@ -83,14 +85,22 @@ hr {
     margin: 5px;
 }
 
+.heart-button:hover{
+    background-color: rgb(117, 111, 143);
+}
+
 .source-code {
     height: 45px;
     padding: 10px;
     background-color: rgb(94, 90, 111);
     border: 1px solid rgb(94, 90, 111);
     border-radius: 5px;
-    color: white;
+    color: whitesmoke;
     margin: 5px;
+}
+
+.source-code:hover {
+    background-color: rgb(117, 111, 143);
 }
 
 .Pin-item {
@@ -99,8 +109,12 @@ hr {
     background-color: rgb(94, 90, 111);
     border: 1px solid rgb(94, 90, 111);
     border-radius: 5px;
-    color: white;
+    color: whitesmoke;
     margin-left: 5px;
+}
+
+.Pin-item:hover {
+    background-color: rgb(117, 111, 143);
 }
 
 .drop-down {
@@ -109,7 +123,7 @@ hr {
     background-color: rgb(94, 90, 111);
     border: 1px solid rgb(94, 90, 111);
     border-radius: 5px;
-    color: white;
+    color: whitesmoke;
     margin-left: 1px;
     margin-right: 10px;
 }
@@ -120,7 +134,7 @@ hr {
     background-color: rgb(10, 10, 10);
     border: 1px solid rgb(10, 10, 10);
     border-radius: 5px;
-    color: white;
+    color: whitesmoke;
    
 }
 
@@ -135,3 +149,234 @@ hr {
     color: rgb(206, 96, 114);
     font-size: 20px;
 }
+
+.fa-thumbtack {
+    color: cadetblue;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    color: white;
+    list-style-type: none;
+    align-items: center;
+    margin: 30px;
+}
+
+li {
+    margin: 20px;
+
+}
+
+.netflix {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    /* transform: rotate(10deg); */
+}
+
+.netflix:hover {
+    color: white;
+    /* vertical-align: bottom; */
+    transform: scale(1.03);
+}
+
+.red-background:hover {
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.search_for_title {
+    border: 1px solid grey;
+    background-color: inherit;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 50px;
+    width: 150px;
+}
+
+.search_for_title:hover {
+    border: 1px solid red;
+    width: 300px;
+    transform: scale(1.1);
+}
+
+.jack_oliver {
+    position: absolute;
+    right: 30px;
+  
+}
+
+
+.dot:hover {
+    height: 25px;
+    width: 25px;
+    background-color: inherit;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    
+}
+
+.fa-caret-right {
+    color: cadetblue;
+    transform: rotate(45deg);
+    font-size: 25px;
+    
+}
+
+.text_in_the_middle {
+    color: whitesmoke;
+    margin-left: 12%;
+    width: 400px;
+    
+}
+
+.text_in_the_middle h2{
+    margin-bottom: 25px;
+}
+
+.middle-buttons {
+    color: whitesmoke;
+    background-color: inherit;
+    margin-left: 12%;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.Watch-now {
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: inherit;
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 12px;
+    margin-right: 5px ;
+}
+
+.Watch-now:hover {
+    background-color: red;
+}
+
+.my-list {
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: inherit;
+    border: 1.5px solid grey;
+    border-radius: 30px;
+    padding: 12px;
+}
+
+.my-list:hover {
+    border: 2px solid white;
+}
+
+.top-tv-picks {
+    color: whitesmoke;
+    margin-left: 50px;
+    margin-top: 20%;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+   justify-content: space-between;
+   margin-left: 50px;
+   margin-right: 50px;
+   gap: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards img {
+    width: 280px;
+    height: 200px;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+   
+   transition: transform 0.5s ease-in-out;
+   position: relative;
+}
+
+.cards img:hover{
+    transform: scale(1.18);
+    /* transform: scale(1,1.18); */
+    transition: transform 0.5s ease-in-out;
+    border-top: 20px solid transparent; 
+    border-bottom: 20px solid transparent; 
+   opacity: 0.5;
+        
+}
+
+.first-image{
+    position: relative;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    /* transform: translate(-50%, -50%); */
+    /* color: rgb(187, 24, 24); */
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    text-wrap: wrap;
+    display: block;
+    width: 250px;
+    /* text-overflow: ellipsis; */
+}
+
+.first-image:hover .overlay-text {
+    opacity: 1; 
+    transition: opacity 0.1s ease-in-out;
+    color: whitesmoke;
+} 
+
+
+
+.second-image{
+    position: relative;
+}
+
+
+.overlay-text2 {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    /* transform: translate(-50%, -50%); */
+    color: rgb(187, 24, 24);
+    font-size: 20px;
+    /* opacity: 0; */
+    transition: opacity 0.1s ease-in-out;
+    text-wrap: wrap;
+    display: block;
+    width: 250px;
+   
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.second-image:hover .overlay-text2 {
+    opacity: 1; 
+    transition: opacity 0.1s ease-in-out;
+    color: whitesmoke;
+    overflow: hidden;
+} 
+
+small {
+    font-size: 15px;
+   
+}
+
+strong {
+    font-size: 30px;
+    /* font-weight: normal; */
+    font-weight: lighter;
+}
+
